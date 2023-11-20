@@ -50,9 +50,9 @@
         </style>
 
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.html" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 <h1 class="m-0 text-primary">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="image/happy-english-school-no-ii-east-delhi-logo.png" alt="#" />
                     </a>
                     Happy English School <span class="small-text">(No. &#8545;)</span>
@@ -63,24 +63,25 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarCollapse">
                   <div class="navbar-nav mx-auto">
-                      <a href="index.html" class="nav-item nav-link active">Home</a>
-                      <a href="about.html" class="nav-item nav-link">About Us</a>
-                      <a href="classes.html" class="nav-item nav-link">Classes</a>
+                      <a href="index.php" class="nav-item nav-link active">Home</a>
+                      <a href="about.php" class="nav-item nav-link">About Us</a>
+                      <a href="classes.php" class="nav-item nav-link">Classes</a>
                       <div class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                           <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="introduction.html" class="dropdown-item">School Introduction</a>
-                            <a href="facility.html" class="dropdown-item">School Facilities</a>
-                            <a href="prospectus.html" class="dropdown-item">School Prospectus</a>
-                            <a href="registration_&_admission.html" class="dropdown-item">Registration & Admission</a>
-                            <a href="gallery.html" class="dropdown-item">School Gallery</a>
-                            <a href="upload_&_download.html" class="dropdown-item">Download</a>
-                            <a href="leave_application.html" class="dropdown-item">Leave Application</a>
-                            <a href="career.html" class="dropdown-item">Career</a>
-                            <a href="faqs.html" class="dropdown-item">FAQ's </a>
+                            <a href="introduction.php" class="dropdown-item">School Introduction</a>
+                            <a href="facility.php" class="dropdown-item">School Facilities</a>
+                            <a href="prospectus.php" class="dropdown-item">School Prospectus</a>
+                            <a href="registration_&_admission.php" class="dropdown-item">Registration & Admission</a>
+                            <a href="gallery.php" class="dropdown-item">School Gallery</a>
+                            <a href="upload_&_download.php" class="dropdown-item">Download</a>
+                            <a href="leave_application.php" class="dropdown-item">Leave Application</a>
+                            <a href="results.php" class="dropdown-item">Result</a>
+                            <a href="career.php" class="dropdown-item">Career</a>
+                            <a href="faqs.php" class="dropdown-item">FAQ's </a>
                           </div>
                       </div>
-                      <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                      <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                   </div>
                   
               </div>
@@ -94,7 +95,7 @@
                 <h1 class="display-2 text-white animated slideInDown mb-4">Classes</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page">Classes</li>
                     </ol>
@@ -190,65 +191,6 @@
         <!-- Classes End -->
 
 
-        <!-- Appointment Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Make Appointment</h1>
-                                <form action="process_form.php" method="post">
-                                    <div class="row g-3">
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Child Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Child Age</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14004.95763668296!2d77.2774773!3d28.6525494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcbd452a4a19%3A0xad3e2c17d73a0e9b!2sHappy%20English%20School!5e0!3m2!1sen!2sin!4v1692521769233!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Appointment End -->
-
-
         <!-- Testimonial Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -282,12 +224,12 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Get In Touch With School</h3>
-                        <p class="mb-2"><a class="btn btn-link text-white-50" href="contact.html"><i class="fa fa-map-marker-alt me-3"></i>Happy English School <small>(No. II) </small>11 Block, Geeta Colony, Delhi - 110031</a></p>
+                        <p class="mb-2"><a class="btn btn-link text-white-50" href="contact.php"><i class="fa fa-map-marker-alt me-3"></i>Happy English School <small>(No. II) </small>11 Block, Geeta Colony, Delhi - 110031</a></p>
 
-                        <a  href="contact.html"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 011-22411111</p></a>
-                        <a  href="contact.html"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 011-35595662</p></a>
-                        <a  href="contact.html"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9899103191</p></a>
-                        <a  href="contact.html"><p class="mb-2"><i class="fa fa-envelope me-3"></i>hesgc1954@gmail.com</p></a>
+                        <a  href="contact.php"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 011-22411111</p></a>
+                        <a  href="contact.php"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 011-35595662</p></a>
+                        <a  href="contact.php"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9899103191</p></a>
+                        <a  href="contact.php"><p class="mb-2"><i class="fa fa-envelope me-3"></i>hesgc1954@gmail.com</p></a>
                         <div class="d-flex pt-2">
                         
                             <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/hesgeetacolony?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
@@ -297,39 +239,39 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
-                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="prospectus.html">Prospectus</a>
-                        <a class="btn btn-link text-white-50" href="gallery.html">Gallery</a>
+                        <a class="btn btn-link text-white-50" href="about.php">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="prospectus.php">Prospectus</a>
+                        <a class="btn btn-link text-white-50" href="gallery.php">Gallery</a>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Service Reviews</h3>
                         <a class="btn btn-link text-white-50" href="https://forms.gle/aTVgj8boqV8RQHvV7">Feedback</a>
-                        <a class="btn btn-link text-white-50" href="career.html">Drop Resume</a>
-                        <a class="btn btn-link text-white-50" href="facility.html">Facility</a>
+                        <a class="btn btn-link text-white-50" href="career.php">Drop Resume</a>
+                        <a class="btn btn-link text-white-50" href="facility.php">Facility</a>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt=""></a>
                             </div>
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt=""></a>
                             </div>
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt=""></a>
                             </div>
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt=""></a>
                             </div>
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt=""></a>
                             </div>
                             <div class="col-4">
-                                <a  href="gallery.html"><img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt=""></a>
+                                <a  href="gallery.php"><img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -340,7 +282,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="index.html">Happy English School <small>(No. II)</small></a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="index.php">Happy English School <small>(No. II)</small></a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
@@ -348,8 +290,8 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="index.html">Home</a>
-                                <a href="faqs.html">FAQ's</a>
+                                <a href="index.php">Home</a>
+                                <a href="faqs.php">FAQ's</a>
                             </div>
                         </div>
                     </div>

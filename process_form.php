@@ -1,21 +1,36 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $gname = $_POST['gname'];
-    $gmail = $_POST['gmail'];
-    $cname = $_POST['cname'];
-    $cage = $_POST['cage'];
-    $message = $_POST['message'];
+// Assuming you have a MySQL database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "login";
 
-    // Construct the email message
-    $to = 'your@example.com'; // Replace with your email address
-    $subject = 'Form Submission';
-    $body = "Guardian Name: $gname\nGuardian Email: $gmail\nChild Name: $cname\nChild Age: $cage\nMessage:\n$message";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Send the email
-    mail($to, $subject, $body);
-
-    // Redirect or display a thank you message
-    header('Location: thank_you.html'); // Redirect to a thank you page
-    exit();
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+// Process form data
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $gname = $_POST["gname"];
+    $gmail = $_POST["gmail"];
+    $cname = $_POST["cname"];
+    $cage = $_POST["cage"];
+    $message = $_POST["message"];
+
+    // Insert data into the table
+    $sql = "INSERT INTO appointment (gurdian_name, gurdian_email, child_name, child_age, message) VALUES ('$gname', '$gmail', '$cname', '$cage', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record inserted successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Close connection
+$conn->close();
 ?>

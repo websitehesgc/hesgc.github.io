@@ -1,34 +1,36 @@
 <?php
-// Function to display files of a specific category
-function displayFiles($category) {
-    // Replace with your upload directory path
-    $uploadDirectory = "uploads/";
+// Check if the file parameter is set
+if (isset($_GET['file'])) {
+    $file = $_GET['file'];
 
-    // Check if the category is valid (circular, datesheet, notice)
-    if ($category !== "circular" && $category !== "datesheet" && $category !== "notice") {
-        echo "Invalid category.";
-        return;
-    }
+    // Define the path to the directory where the files are stored
+    $directory = 'uploads/';
 
-    $categoryPath = $uploadDirectory . $category . '/';
-    
-    if (is_dir($categoryPath)) {
-        $files = scandir($categoryPath);
-        foreach ($files as $file) {
-            if ($file !== "." && $file !== "..") {
-                echo "<a href='$categoryPath$file' download>$file</a><br>";
-            }
-        }
+    // Combine the directory path and file name to get the full path
+    $filepath = $directory . $file;
+
+    // Check if the file exists
+    if (file_exists($filepath)) {
+        // Set the appropriate headers for the file download
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename="' . basename($filepath) . '"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($filepath));
+
+        // Read the file and output it to the browser
+        readfile($filepath);
+
+        // Exit the script
+        exit;
     } else {
-        echo "Category not found.";
+        // If the file does not exist, you can handle the error accordingly
+        echo "File not found.";
     }
-}
-
-// Check if category is provided in the URL
-if(isset($_GET['category'])) {
-    $category = $_GET['category'];
-    displayFiles($category);
 } else {
-    echo "Category not specified.";
+    // If the file parameter is not set, you can handle the error accordingly
+    echo "Invalid request.";
 }
 ?>
